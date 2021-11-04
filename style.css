@@ -6,15 +6,26 @@
   box-sizing: border-box;
 }
 body {
-  min-height: 100vh;
-  background-color: #333;
+  min-height: 70vh;
+  background-color: #8ba7be;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   font-family: "Poppins", sans-serif;
-  padding: 30px;
+  padding: 30px 200px;
 }
 
+h1 {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: #333;
+}
+
+.btn:focus {
+  outline: none;
+  border: 0;
+}
 /* BTN1************************* */
 
 .btn1 {
@@ -30,7 +41,7 @@ body {
   padding: 5px;
   cursor: pointer;
   overflow: hidden;
-  margin: 10px 15px;
+  margin: 30px 15px;
 }
 
 .btn1::before {
@@ -65,7 +76,7 @@ body {
   font-size: 1.2rem;
   padding: 5px;
   cursor: pointer;
-  margin: 10px 15px;
+  margin: 30px 15px;
   overflow: hidden;
   transition-delay: 0.2s;
   transition: all 0.3s linear;
@@ -106,7 +117,7 @@ body {
   font-size: 1.2rem;
   padding: 5px;
   cursor: pointer;
-  margin: 10px 15px;
+  margin: 30px 15px;
   overflow: hidden;
   transition-delay: 0.2s;
   transition: all 0.3s linear;
@@ -147,7 +158,7 @@ body {
   font-size: 1.2rem;
   padding: 5px;
   cursor: pointer;
-  margin: 10px 15px;
+  margin: 30px 15px;
   overflow: hidden;
   transition-delay: 0.2s;
   transition: all 0.3s linear;
@@ -188,7 +199,7 @@ body {
   font-size: 1.2rem;
   padding: 5px;
   cursor: pointer;
-  margin: 10px 15px;
+  margin: 30px 15px;
   overflow: hidden;
   transition-delay: 0.2s;
   transition: all 0.3s linear;
@@ -246,7 +257,7 @@ body {
   font-size: 1.2rem;
   padding: 5px;
   cursor: pointer;
-  margin: 10px 15px;
+  margin: 30px 15px;
   overflow: hidden;
   transition-delay: 0.2s;
   transition: all 0.3s linear;
@@ -271,7 +282,7 @@ body {
   font-size: 1.2rem;
   padding: 5px;
   cursor: pointer;
-  margin: 10px 15px;
+  margin: 30px 15px;
   overflow: hidden;
   transition-delay: 0.2s;
   transition: all 0.3s linear;
@@ -309,7 +320,7 @@ body {
   font-size: 1.2rem;
   padding: 5px;
   cursor: pointer;
-  margin: 10px 15px;
+  margin: 30px 15px;
   overflow: hidden;
   transition: all 0.3s linear;
   transition-delay: 0.1s;
@@ -349,7 +360,7 @@ body {
   font-size: 1.2rem;
   padding: 5px;
   cursor: pointer;
-  margin: 10px 15px;
+  margin: 30px 15px;
   overflow: hidden;
   transition: all 0.3s linear;
   transition-delay: 0.1s;
@@ -390,7 +401,7 @@ body {
   font-size: 1.2rem;
   padding: 5px;
   cursor: pointer;
-  margin: 10px 15px;
+  margin: 30px 15px;
   overflow: hidden;
   transition: all 0.3s linear;
   transition-delay: 0.1s;
@@ -413,4 +424,314 @@ body {
 .btn10:hover:before {
   transform: translateY(0);
   height: 200%;
+}
+
+/*  ********* Btn11  *************** */
+
+.btn11 {
+  position: relative;
+  width: 8rem;
+  height: 3.5rem;
+  outline: 0;
+  border: 1px solid #fff;
+  background: transparent;
+  font-weight: 700;
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 5px;
+  cursor: pointer;
+  margin: 30px 15px;
+  overflow: hidden;
+  transition: all 0.3s linear;
+  transition-delay: 0.1s;
+}
+
+.btn11::before {
+  content: "Hi ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #f05e47;
+  transform-origin: top center;
+  display: grid;
+  place-items: center;
+  transform: rotateX(270deg);
+  transition: all 0.3s linear;
+}
+
+.btn11::after {
+  content: "Thanks ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #9647f0;
+  transform-origin: top;
+  display: grid;
+  place-items: center;
+  transform: rotateX(270deg);
+  transition: all 0.3s linear;
+  transition-delay: 0.2s;
+}
+
+.btn11:hover:before {
+  transform: rotateX(0deg);
+}
+
+.btn11:hover:after {
+  transform: rotateX(0deg);
+}
+
+/*  ********* Btn12  *************** */
+
+.btn12 {
+  position: relative;
+  width: 8rem;
+  height: 3.5rem;
+  outline: 0;
+  border: 1px solid #fff;
+  background: transparent;
+  font-weight: 700;
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 5px;
+  cursor: pointer;
+  margin: 30px 15px;
+  overflow: hidden;
+  transition: all 0.3s linear;
+}
+
+.btn12::before {
+  content: "Thanks";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  background: #f05e47;
+  transform: translateX(100%) rotateY(360deg) scale(0);
+  opacity: 0;
+  transition: all 0.5s linear;
+}
+
+.btn12::after {
+  content: "Hi";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  background: #f05e47;
+  transform: translateX(0) rotateY(0deg);
+  opacity: 1;
+  transition: all 0.5s linear;
+}
+
+.btn12:hover:before {
+  transform: translateX(0) rotateY(0deg) scale(1);
+  opacity: 1;
+}
+
+.btn12:hover::after {
+  transform: translateX(-100%) rotateY(360deg) scale(0);
+  opacity: 0;
+}
+
+/*  ********* Btn13 *************** */
+
+.btn13 {
+  position: relative;
+  width: 12rem;
+  height: 3.1rem;
+  outline: 0;
+  background: transparent;
+  font-weight: 700;
+  border: 0;
+  outline: 0;
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 5px;
+  cursor: pointer;
+  margin: 30px 15px;
+  overflow: hidden;
+  transition: all 0.3s linear;
+}
+
+.btn13::before {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  width: 100%;
+  height: 100%;
+  background: #20caff;
+  mix-blend-mode: multiply;
+  z-index: -1;
+  transform-origin: top;
+  transform: rotateX(0deg);
+  transition: all 0.3s linear;
+}
+
+.btn13::after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  width: 100%;
+  height: 100%;
+  background: #ff7675;
+  z-index: -1;
+  mix-blend-mode: multiply;
+  transform-origin: bottom;
+  transform: rotateX(0deg);
+  transition: all 0.3s linear;
+}
+
+.btn13:hover:before {
+  top: -8px;
+  transform: perspective(1000px) rotateX(80deg);
+}
+.btn13:hover:after {
+  top: 8px;
+  transform: perspective(1000px) rotateX(-80deg);
+}
+
+/*  ********* Btn14*************** */
+
+.btn14 {
+  position: relative;
+  width: 9rem;
+  height: 3rem;
+  outline: 0;
+  background: transparent;
+  font-weight: 700;
+  border: 0;
+  outline: 0;
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 5px;
+  cursor: pointer;
+  margin: 30px 15px;
+  transition: all 0.3s linear;
+}
+
+.btn14::before {
+  content: "";
+  position: absolute;
+  height: 40%;
+  width: 20%;
+  top: -5px;
+  left: -5px;
+  border-left: 3px solid #333;
+  border-top: 3px solid #333;
+  transition: all 0.3s linear;
+}
+
+.btn14::after {
+  content: "";
+  position: absolute;
+  height: 40%;
+  width: 20%;
+  bottom: -5px;
+  right: -5px;
+
+  border-right: 3px solid #333;
+  border-bottom: 3px solid #333;
+  transition: all 0.3s linear;
+}
+
+.btn14:hover:before {
+  height: 100%;
+  width: 100%;
+}
+.btn14:hover:after {
+  height: 100%;
+  width: 100%;
+}
+
+/*  ********* Btn15*************** */
+
+.btn15 {
+  position: relative;
+  width: 9rem;
+  height: 3rem;
+  background: transparent;
+  font-weight: 700;
+  border: 0;
+  outline: 0;
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 5px;
+  cursor: pointer;
+  margin: 30px 15px;
+  transition: all 0.3s linear;
+}
+
+.btn15::before {
+  content: "";
+  position: absolute;
+  height: 0%;
+  width: 0%;
+  top: 0px;
+  left: 0px;
+  border-left: 3px solid #333;
+  transition: all 0.3s linear;
+}
+
+.btn15::after {
+  content: "";
+  position: absolute;
+  height: 0%;
+  width: 0%;
+  bottom: 0px;
+  right: 0px;
+  border-right: 3px solid #333;
+  transition: all 0.3s linear;
+}
+
+.btn15:hover:before {
+  height: 100%;
+  /* width: 100%; */
+}
+
+.btn15:hover:after {
+  /* width: 100%; */
+  height: 100%;
+}
+
+.btn15 span::before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 0%;
+  top: 0;
+  right: 0;
+  border-top: 3px solid #333;
+  transition: all 0.3s linear;
+}
+
+.btn15 span::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 0%;
+  bottom: 0;
+  left: 0;
+  border-bottom: 3px solid #333;
+  transition: all 0.3s linear;
+}
+
+.btn15:hover > span::before {
+  width: 100%;
+}
+
+.btn15:hover > span::after {
+  width: 100%;
 }
