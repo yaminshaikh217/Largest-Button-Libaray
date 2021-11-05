@@ -13,6 +13,7 @@ body {
   flex-wrap: wrap;
   font-family: "Poppins", sans-serif;
   padding: 30px 200px;
+  text-align: center;
 }
 
 h1 {
@@ -698,11 +699,9 @@ h1 {
 
 .btn15:hover:before {
   height: 100%;
-  /* width: 100%; */
 }
 
 .btn15:hover:after {
-  /* width: 100%; */
   height: 100%;
 }
 
@@ -734,4 +733,110 @@ h1 {
 
 .btn15:hover > span::after {
   width: 100%;
+}
+
+/*  ********* Btn16 *************** */
+
+.btn16 {
+  position: relative;
+  width: 12rem;
+  height: 3.1rem;
+  background: transparent;
+  font-weight: 700;
+  color: #fff;
+  border: 0;
+  font-size: 1.2rem;
+  padding: 5px;
+  cursor: pointer;
+  margin: 30px 15px;
+  overflow: hidden;
+  transition: all 0.3s linear;
+}
+
+.span16 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #fff;
+  z-index: -1;
+  background: transparent;
+  transition: all 0.3s linear;
+}
+
+.span16::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 10px;
+  height: 600%;
+  background: #8ba7be;
+  transform: translate(-50%, -50%) rotate(-60deg);
+  transition: all 0.3s linear;
+}
+
+.btn16:hover .span16:before {
+  width: 100%;
+  background-color: #333;
+  transform: translate(-50%, -50%) rotate(60deg);
+}
+
+/*  ********* Btn17 *************** */
+
+.btn17 {
+  position: relative;
+  width: 10rem;
+  height: 3.1rem;
+  background: #71deff;
+  font-weight: 700;
+  border: 0;
+  font-size: 1.2rem;
+  padding: 5px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  margin: 30px 15px;
+  border-radius: 50px;
+  transition: all 0.3s linear;
+}
+
+.btn17::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(100, 198, 255);
+  border-radius: 50px;
+  z-index: -1;
+  transition: all 0.3s linear;
+}
+
+.btn17:hover:before {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+
+.btn17:hover {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/*  ********* Btn18 *************** */
+
+.btn18 {
+  position: relative;
+  width: 10rem;
+  height: 3.1rem;
+  background: transparent;
+  font-weight: 700;
+  border: 1px solid #fff;
+  font-size: 1.2rem;
+  padding: 5px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  margin: 30px 15px;
+  overflow: hidden;
+  transition: all 0.3s linear;
 }
