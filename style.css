@@ -7,7 +7,7 @@
 }
 body {
   min-height: 70vh;
-  background-color: #8ba7be;
+  background-color: #514072;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -20,7 +20,7 @@ h1 {
   margin: 0;
   padding: 0;
   text-align: center;
-  color: #333;
+  color: #fff;
 }
 
 .btn {
@@ -776,7 +776,7 @@ h1 {
   left: 50%;
   width: 10px;
   height: 600%;
-  background: #8ba7be;
+  background: rgb(81 64 114);
   transform: translate(-50%, -50%) rotate(-60deg);
   transition: all 0.3s linear;
 }
@@ -1136,4 +1136,582 @@ h1 {
   top: 0;
   left: 50%;
   transform: skewX(0deg);
+}
+
+/*  ********* Btn23 *************** */
+
+.btn23 {
+  position: relative;
+  width: 8rem;
+  height: 3.1rem;
+  background: transparent;
+  font-weight: 700;
+  border: 0;
+  font-size: 1.2rem;
+  padding: 5px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  margin: 30px 15px;
+  transition: all 0.3s linear;
+}
+
+.btn23::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #333;
+  transform-origin: left;
+  transform: scaleX(0);
+  transition: all 0.2s linear;
+}
+
+.btn23::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #333;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: all 0.2s linear;
+}
+
+.btn23:hover:before,
+.btn23:hover:after {
+  transform: scaleX(1);
+}
+
+/*  ********* Btn24 *************** */
+
+.btn24 {
+  position: relative;
+  width: 8rem;
+  height: 3.1rem;
+  background: transparent;
+  font-weight: 700;
+  border: 0;
+  font-size: 1.2rem;
+  padding: 5px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  margin: 30px 15px;
+  transition: all 0.3s linear;
+}
+
+.btn24::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 13px;
+  height: 13px;
+  border: 3px solid #333;
+  border-width: 0 0 3px 3px;
+  opacity: 0;
+  transition: all 0.2s linear;
+}
+
+.btn24::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 13px;
+  height: 13px;
+  border: 3px solid #333;
+  border-width: 3px 3px 0 0;
+  opacity: 0;
+  transition: all 0.2s linear;
+}
+
+.btn24:hover:before {
+  opacity: 1;
+  bottom: 5px;
+  left: 0;
+}
+
+.btn24:hover:after {
+  opacity: 1;
+  top: 5px;
+  right: 0;
+}
+
+.btn24:hover {
+  color: #9647f0;
+}
+
+/*  ********* Btn25 *************** */
+
+.btn25 {
+  position: relative;
+  width: 8rem;
+  height: 3.1rem;
+  background: transparent;
+  font-weight: 700;
+  border: 0;
+  font-size: 1.2rem;
+  padding: 5px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  overflow: hidden;
+  margin: 30px 15px;
+  transition: all 0.3s linear;
+}
+
+.btn25 span {
+  position: absolute;
+  width: 25%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #333;
+  z-index: -1;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: all 0.3s linear;
+}
+
+.btn25 span:nth-child(2) {
+  left: 25%;
+  transition-delay: 0.1s;
+}
+
+.btn25 span:nth-child(3) {
+  left: 50%;
+  transition-delay: 0.2s;
+}
+
+.btn25 span:nth-child(4) {
+  left: 75%;
+  transition-delay: 0.25s;
+}
+
+.btn25:hover span {
+  transform: scaleY(1);
+}
+
+/*  ********* Btn26 *************** */
+
+.btn26 {
+  position: relative;
+  width: 8rem;
+  height: 3.1rem;
+  background: transparent;
+  font-weight: 700;
+  border: 0;
+  font-size: 1.2rem;
+  padding: 5px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  overflow: hidden;
+  margin: 30px 15px;
+  transition: all 0.3s linear;
+}
+
+.btn26 span {
+  position: absolute;
+  width: 100%;
+  height: 25%;
+  top: 0;
+  left: 0;
+  background-color: #333;
+  z-index: -1;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: all 0.3s linear;
+}
+
+.btn26 span:nth-child(2) {
+  top: 25%;
+  transition-delay: 0.1s;
+}
+
+.btn26 span:nth-child(3) {
+  top: 50%;
+  transition-delay: 0.2s;
+}
+
+.btn26 span:nth-child(4) {
+  top: 75%;
+  transition-delay: 0.25s;
+}
+
+.btn26:hover span {
+  transform: scaleY(1);
+}
+
+/*  ********* Btn27*************** */
+
+.btn27 {
+  position: relative;
+  width: 8rem;
+  height: 3.1rem;
+  background: transparent;
+  font-weight: 700;
+  border: 0;
+  font-size: 1.2rem;
+  padding: 5px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  overflow: hidden;
+  margin: 30px 15px;
+  transition: all 0.3s linear;
+}
+
+.btn27 span {
+  position: absolute;
+  height: 25%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #333;
+  z-index: -1;
+  transform: scaleX(0);
+  transform-origin: top;
+  transition: all 0.3s linear;
+}
+
+.btn27 span:nth-child(2) {
+  top: 25%;
+  transition-delay: 0.1s;
+}
+
+.btn27 span:nth-child(3) {
+  top: 50%;
+  transition-delay: 0.2s;
+}
+
+.btn27 span:nth-child(4) {
+  top: 75%;
+  transition-delay: 0.25s;
+}
+
+.btn27:hover span {
+  transform: scaleX(1);
+}
+
+/*  ********* Btn28 *************** */
+
+.btn28 {
+  position: relative;
+  width: 8rem;
+  height: 3.1rem;
+  background: transparent;
+  font-weight: 700;
+  border: 0;
+  font-size: 1.2rem;
+  padding: 5px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  overflow: hidden;
+  margin: 30px 15px;
+  transition: all 0.3s linear;
+}
+
+.btn28 span {
+  position: absolute;
+  width: 25%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #333;
+  z-index: -1;
+  transform: scaleX(0);
+  transform-origin: top;
+  transition: all 0.3s linear;
+}
+
+.btn28 span:nth-child(2) {
+  left: 25%;
+  transition-delay: 0.1s;
+}
+
+.btn28 span:nth-child(3) {
+  left: 50%;
+  transition-delay: 0.2s;
+}
+
+.btn28 span:nth-child(4) {
+  left: 75%;
+  transition-delay: 0.25s;
+}
+
+.btn28:hover span {
+  transform: scaleX(1);
+}
+
+/*  ********* Btn29 *************** */
+
+.btn29 {
+  position: relative;
+  width: 8rem;
+  height: 3.1rem;
+  background: transparent;
+  font-weight: 700;
+  border: 0;
+  font-size: 1.2rem;
+  color: #333;
+  padding: 5px;
+  cursor: pointer;
+  margin: 30px 15px;
+  transition: all 0.3s linear;
+}
+
+.btn29::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-top: 3px solid #9647f0;
+  border-bottom: 3px solid #9647f0;
+  opacity: 0;
+  transform: scaleY(2);
+  transition: all 0.3s linear;
+}
+
+.btn29::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: scale(0);
+  background-color: #333;
+  z-index: -1;
+  transition: all 0.3s linear;
+}
+
+.btn29:hover:before {
+  transform: scaleY(1.1);
+  opacity: 1;
+}
+
+.btn29:hover:after {
+  transform: scale(1);
+}
+.btn29:hover {
+  color: #fff;
+}
+
+/*  ********* Btn30*************** */
+
+.btn30 {
+  position: relative;
+  width: 8rem;
+  height: 3.1rem;
+  background: transparent;
+  font-weight: 700;
+  border: 0;
+  font-size: 1.2rem;
+  color: #fff;
+  padding: 5px;
+  cursor: pointer;
+  margin: 30px 15px;
+  transition: all 0.3s linear;
+}
+
+.btn30:hover {
+  color: #9647f0;
+}
+
+.btn30 span:first-child:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  height: 8px;
+  width: 8px;
+  border-top: 2px solid #9647f0;
+  border-left: 2px solid #9647f0;
+  opacity: 0;
+  transition: all 0.3s linear;
+}
+
+.btn30 span:first-child:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: transparent;
+  height: 8px;
+  width: 8px;
+  border-top: 2px solid #9647f0;
+  opacity: 0;
+  border-right: 2px solid #9647f0;
+  transition: all 0.3s linear;
+}
+
+.btn30 span:last-child:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: transparent;
+  height: 8px;
+  width: 8px;
+  border-bottom: 2px solid #9647f0;
+  opacity: 0;
+  border-left: 2px solid #9647f0;
+  transition: all 0.3s linear;
+}
+
+.btn30 span:last-child:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: transparent;
+  height: 8px;
+  width: 8px;
+  border-bottom: 2px solid #9647f0;
+  opacity: 0;
+  border-right: 2px solid #9647f0;
+  transition: all 0.3s linear;
+}
+
+.btn30:hover span:first-child:before {
+  left: -8px;
+  top: -8px;
+  opacity: 1;
+}
+
+.btn30:hover span:first-child:after {
+  right: -8px;
+  opacity: 1;
+  top: -8px;
+}
+
+.btn30:hover span:last-child:before {
+  left: -8px;
+  opacity: 1;
+  bottom: -8px;
+}
+
+.btn30:hover span:last-child:after {
+  right: -8px;
+  opacity: 1;
+  bottom: -8px;
+}
+
+/*  ********* Btn31*************** */
+
+.btn31 {
+  position: relative;
+  width: 8rem;
+  height: 3.1rem;
+  background: transparent;
+  font-weight: 700;
+  border: 0;
+  font-size: 1.2rem;
+  color: #fff;
+  padding: 5px;
+  cursor: pointer;
+  overflow: hidden;
+  margin: 30px 15px;
+  transition: all 0.3s linear;
+}
+
+.btn31::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-top: 2px solid #9647f0;
+  border-left: 2px solid #9647f0;
+  transform-origin: left;
+  transition: all 0.3s linear;
+}
+
+.btn31:hover:before {
+  width: 15px;
+  height: 15px;
+  transform: rotate(360deg);
+}
+
+.btn31::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border-right: 2px solid #9647f0;
+  border-bottom: 2px solid #9647f0;
+  transform-origin: right;
+  transition: all 0.3s linear;
+}
+
+.btn31:hover:after {
+  width: 15px;
+  height: 15px;
+  transform: rotate(360deg);
+}
+
+/*  ********* Btn32*************** */
+
+.btn32 {
+  position: relative;
+  width: 14rem;
+  height: 4rem;
+  background: transparent;
+  font-weight: 900;
+  border: 0;
+  font-size: 2rem;
+  color: transparent;
+  padding: 5px;
+  cursor: pointer;
+  -webkit-text-stroke: 1px #fff;
+  margin: 30px 15px;
+  transition: all 0.5s linear;
+}
+
+.btn32::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s linear;
+}
+
+.btn32::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s linear;
+}
+
+.btn32:hover:before {
+  color: #ff5c69;
+  opacity: 1;
+  -webkit-text-stroke: 1px #333;
+  z-index: 1;
+  left: 5px;
+  top: 1px;
+  transform: translate(1px, 10px);
+}
+
+.btn32:hover:after {
+  color: #7a5cff;
+  opacity: 1;
+  -webkit-text-stroke: 1px #333;
+  z-index: 2;
+  left: 10px;
+  top: 2px;
+  transform: translate(1px, 10px);
 }
